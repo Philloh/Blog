@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-dark text-gray-100 antialiased;
+  }
+}
+
+@layer utilities {
+  .text-cyber-glow {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+  }
+  
+  .bg-cyber-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .bg-cyber-dark-gradient {
+    background: linear-gradient(180deg, #0a0a0f 0%, #1a1a2e 100%);
+  }
+  
+  .cyber-border {
+    @apply border border-cyber-green/20 hover:border-cyber-green/50 transition-colors;
+  }
+  
+  .cyber-card {
+    @apply bg-cyber-darkGray/50 backdrop-blur-sm border border-cyber-green/10 rounded-lg p-6 hover:border-cyber-green/30 transition-all overflow-hidden;
+  }
+  
+  .cyber-button {
+    @apply px-6 py-3 bg-gradient-to-r from-cyber-purple to-cyber-blue text-white font-bold rounded-lg hover:shadow-lg hover:shadow-cyber-blue/50 transition-all transform;
+    @apply md:hover:scale-105;
+  }
+  
+  .glow-effect {
+    position: relative;
+  }
+  
+  .glow-effect::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, #00ff88, #00d4ff, #6c5ce7, #ff006e);
+    border-radius: inherit;
+    opacity: 0.3;
+    filter: blur(10px);
+    z-index: -1;
+    animation: gradient 3s ease infinite;
+    background-size: 400% 400%;
+  }
+  
+  @keyframes gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  .code-container {
+    @apply bg-cyber-darker p-4 rounded-lg border border-cyber-green/20 overflow-x-auto;
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cyber-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cyber-green/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-cyber-green/50;
+}
+

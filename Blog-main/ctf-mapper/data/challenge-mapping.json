@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2025-10-29T00:00:00.000Z",
+  "notes": "Populate 'flags[].answer' only via local sync or manually. Do NOT commit real secrets to the repo.",
+  "mappings": [
+    {
+      "challengeId": "sqli-basic",
+      "title": "SQL Injection - Basic",
+      "category": "sql-injection",
+      "thmRoomUrl": "https://tryhackme.com/room/sqlilab",
+      "flags": [
+        { "id": "flag1", "description": "Challenge flag 1", "answer": "" }
+      ],
+      "lastSyncedAt": null
+    },
+    {
+      "challengeId": "xss-intro",
+      "title": "XSS Intro",
+      "category": "xss",
+      "thmRoomUrl": "https://tryhackme.com/room/xss",
+      "flags": [
+        { "id": "flag1", "description": "XSS page flag", "answer": "" }
+      ],
+      "lastSyncedAt": null
+    }
+  ]
+}
