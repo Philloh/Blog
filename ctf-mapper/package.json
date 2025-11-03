@@ -1,0 +1,15 @@
+{
+  "name": "ctf-mapper",
+  "version": "0.1.0",
+  "description": "Tools to map blog CTF challenges to TryHackMe rooms and optionally fetch flags locally (no credentials in repo)",
+  "scripts": {
+    "sync": "node scripts/sync_thm.js --mapping data/challenge-mapping.json",
+    "apply": "node scripts/apply_mapping.js --mapping data/challenge-mapping.json",
+    "dry-run-apply": "node scripts/apply_mapping.js --mapping data/challenge-mapping.json --dry"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  }
+}

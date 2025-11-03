@@ -1,0 +1,1 @@
+Audit the webhook signature and idempotency handling. Keys must not be in client code.

@@ -1,0 +1,8 @@
+{
+  "transaction": "abc123",
+  "amount": 1250,
+  "currency": "KES",
+  "msisdn": "+254700000000",
+  "status": "SUCCESS",
+  "signature": "<replace-with-hmac>"
+}
