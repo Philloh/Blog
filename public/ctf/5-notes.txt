@@ -1,0 +1,1 @@
+Use JADX/Ghidra to inspect logic. Look for hardcoded keys and obfuscation patterns.
